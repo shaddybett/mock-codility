@@ -1,7 +1,5 @@
-let people = [{name: 'peter',age: 30},{name: 'Mary', age: 20},{name:'Clare',age: 25}]
+let names = ["Danny", "Moly", "Joe", "Bett"];
 
-function old(people) {
-    let oldPeople = people.filter(people => people.age >= 25)
-    return oldPeople;
+for (let name of names) {
+  console.log(name);
 }
-console.log(old(people))
