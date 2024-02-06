@@ -101,5 +101,8 @@
 function findIndex(nums) {
     let indices = {}
 
-    
+    nums.forEach((num,index)=> {
+        indices[num] = index;
+    });
+    return indices;
 }
