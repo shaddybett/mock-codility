@@ -75,8 +75,7 @@ function sortedList(nums) {
     } else {
       numSet.add(num);
     }
-    console.log(numSet);
-    console.log(duplicates);
+    return numSet;
   }
 }
 numbers = sortedList([1, 1, 3, 4, 5, 6, 7, 3]);
