@@ -75,8 +75,9 @@ function sortedList(nums) {
     } else {
       numSet.add(num);
     }
-    return numSet;
+    
   }
+  return { unique: Array.from(numSet), duplicates };
 }
-numbers = sortedList([1, 1, 3, 4, 5, 6, 7, 3]);
-// console.log(numbers)
+let numbers = sortedList([1, 1, 3, 4, 5, 6, 7, 3]);
+console.log(numbers)
