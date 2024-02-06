@@ -98,13 +98,4 @@
 
 
 
-function findIndex(nums) {
-    let indices = {};
-    nums.forEach((num, index) => {
-        indices[num] = index;
-    });
-    return indices;
-}
-
-let numbers = findIndex([1, 2, 3, 4, 5]);
-console.log(numbers);
+function findIndex
