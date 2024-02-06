@@ -65,16 +65,19 @@
 // console.log(number);
 
 function sortedList(nums) {
-    const numSet = new Set()
-    const duplicates = []
+  const numSet = new Set();
+  const duplicates = [];
 
-    for (let i = 0;i<nums.length;i++) {
-        let num = nums[i];
-        if(numSet.has(num)) {
-            duplicates.push(num)
-        }
-        else {
-            numSet.add(num)
-        }
+  for (let i = 0; i < nums.length; i++) {
+    let num = nums[i];
+    if (numSet.has(num)) {
+      duplicates.push(num);
+    } else {
+      numSet.add(num);
     }
+    console.log(numSet);
+    console.log(duplicates);
+  }
 }
+numbers = sortedList([1, 1, 3, 4, 5, 6, 7, 3]);
+// console.log(numbers)
