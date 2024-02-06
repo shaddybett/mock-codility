@@ -64,20 +64,26 @@
 // let number = sortList([4,2,3,1]);
 // console.log(number);
 
-function sortedList(nums) {
-  const numSet = new Set();
-  const duplicates = [];
+// function sortedList(nums) {
+//   const numSet = new Set();
+//   const duplicates = [];
 
-  for (let i = 0; i < nums.length; i++) {
-    let num = nums[i];
-    if (numSet.has(num)) {
-      duplicates.push(num);
-    } else {
-      numSet.add(num);
-    }
+//   for (let i = 0; i < nums.length; i++) {
+//     let num = nums[i];
+//     if (numSet.has(num)) {
+//       duplicates.push(num);
+//     } else {
+//       numSet.add(num);
+//     }
     
-  }
-  return { unique: Array.from(numSet), duplicates };
-}
-let numbers = sortedList([1, 1, 3, 4, 5, 6, 7, 3]);
-console.log(numbers)
+//   }
+//   return duplicates.length;
+// //   return { unique: Array.from(numSet), duplicates };
+// }
+// let numbers = sortedList([2, 4, 6, 8, 2, 3, 6, 9, 4]);
+// console.log(numbers)
+
+
+
+
+
