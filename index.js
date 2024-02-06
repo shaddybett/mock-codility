@@ -89,9 +89,12 @@
 
 // // function firstDup
 
-function sortList(head) {
-    const ordered = head.sort((a,b)=> a-b)
-    return ordered;
-}
-let number = sortList([4,2,1,3])
-console.log(number)
+// function sortList(head) {
+//     const ordered = head.sort((a,b)=> a-b)
+//     return ordered;
+// }
+// let number = sortList([4,2,1,3])
+// console.log(number)
+
+
+
