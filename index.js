@@ -80,7 +80,7 @@ function sortedList(nums) {
 //   return duplicates.length;
 //   return { unique: Array.from(numSet), duplicates };
 }
-let numbers = sortedList([2, 4, 6, 8, 2, 3, 6, 9, 4]);
+let numbers = sortedList([2, 4, 6, 8, 3, 6, 9, 4]);
 console.log(numbers)
 
 
