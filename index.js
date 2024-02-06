@@ -99,5 +99,5 @@
 
 
 function findIndex(nums) {
-    
+    let indices = {}
 }
