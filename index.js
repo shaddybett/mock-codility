@@ -71,13 +71,13 @@ function sortedList(nums) {
   for (let i = 0; i < nums.length; i++) {
     let num = nums[i];
     if (numSet.has(num)) {
-      duplicates.push(num);
+      return num;
     } else {
       numSet.add(num);
     }
     
   }
-  return duplicates.length;
+//   return duplicates.length;
 //   return { unique: Array.from(numSet), duplicates };
 }
 let numbers = sortedList([2, 4, 6, 8, 2, 3, 6, 9, 4]);
@@ -87,4 +87,4 @@ console.log(numbers)
 
 
 
-function firstDup
+// function firstDup
