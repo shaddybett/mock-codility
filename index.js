@@ -98,4 +98,6 @@
 
 
 
-function findIndex
+function findIndex(nums) {
+    
+}
