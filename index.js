@@ -66,5 +66,9 @@
 
 function sortedList(nums) {
     const numSet = new Set()
-    duplicates = []
+    const duplicates = []
+
+    for (let i = 0;i<nums.length;i++) {
+        
+    }
 }
