@@ -73,8 +73,8 @@ function sortedList(nums) {
         if(numSet.has(num)) {
             duplicates.push(num)
         }
-        // else {
-        //     numSet.add(num)
-        // }
+        else {
+            numSet.add(num)
+        }
     }
 }
