@@ -54,37 +54,116 @@
 // let numbers = sortList([4,8,7,5,6,2,1,3])
 // console.log(numbers)
 
-function sortList(nums) {
-  const numbers = nums.map((num, index) => ({ num, index }));
-  numbers.sort((a, b) => a.num - b.num);
-  const sorted = numbers.map(item => item.num);
-  return sorted
-//   console.log(numbers);
-}
-let number = sortList([4,2,3,1]);
-console.log(number);
+// function sortList(nums) {
+//   const numbers = nums.map((num, index) => ({ num, index }));
+//   numbers.sort((a, b) => a.num - b.num);
+//   const sorted = numbers.map(item => item.num);
+//   return sorted
+// //   console.log(numbers);
+// }
+// let number = sortList([4,2,3,1]);
+// console.log(number);
 
-function sortedList(nums) {
-  const numSet = new Set();
-  const duplicates = [];
+// function sortedList(nums) {
+//   const numSet = new Set();
+//   const duplicates = [];
 
-  for (let i = 0; i < nums.length; i++) {
-    let num = nums[i];
-    if (numSet.has(num)) {
-      return num;
-    } else {
-      numSet.add(num);
+//   for (let i = 0; i < nums.length; i++) {
+//     let num = nums[i];
+//     if (numSet.has(num)) {
+//       return num;
+//     } else {
+//       numSet.add(num);
+//     }
+
+//   }
+// //   return duplicates.length;
+// //   return { unique: Array.from(numSet), duplicates };
+// }
+// let numbers = sortedList([2, 4, 6, 8, 3, 6, 9, 4]);
+// console.log(numbers)
+
+// // function firstDup
+
+// function sortList(head) {
+//     const ordered = head.sort((a,b)=> a-b)
+//     return ordered;
+// }
+// let number = sortList([4,2,1,3])
+// console.log(number)
+
+// function findIndex(nums) {
+//   let indices = {};
+
+//   nums.forEach((num, index) => {
+//     indices[num] = index;
+//   });
+//   return indices;
+// }
+// let numbers = findIndex([1, 2, 3, 4, 5]);
+// console.log(numbers);
+
+
+
+// if has duplicates return true else return false
+// function checkDuplicates(nums) {
+//     let unique = new Set()
+//     for (let i = 0;i < nums.length; i++) {
+//         let num = nums[i];
+//         if (unique.has(num)){
+//             return true;
+//         }
+//         else {
+//             unique.add(num)
+//         }
+//     }
+//     return false;
+// }
+// let number = checkDuplicates([1,2,3,4,5,6])
+// console.log(number)
+
+
+
+
+
+// return duplicated numbers
+// function checkDuplicates(nums) {
+//     const unique = new Set()
+//     const duplicates = []
+
+//     for (let i = 0;i < nums.length;i++) {
+//         let num = nums[i]
+//         if(unique.has(num)) {
+//             duplicates.push (num)
+//         }
+//         else {
+//             unique.add(num);
+//         }
+//     }
+//     return duplicates;
+// }
+// let number = checkDuplicates([1,2,3,4,1])
+// console.log(number)
+
+
+
+
+
+// arranging numbers in ascending order
+// function arrangeNUmbers(nums) {
+//     return nums.sort((a,b)=> a-b)
+// }
+// let numbers = arrangeNUmbers([4,3,2,1,5])
+// console.log(numbers)
+
+
+function complementTarget(nums,target) {
+    for (let i = 0;i<nums.length;i++) {
+        let num = nums[i];
+        let oneNum = target - num;
+        if (oneNum + num === target) {
+            return num;
+        }
+
     }
-    
-  }
-//   return duplicates.length;
-//   return { unique: Array.from(numSet), duplicates };
 }
-let numbers = sortedList([2, 4, 6, 8, 3, 6, 9, 4]);
-console.log(numbers)
-
-
-
-
-
-// function firstDup
