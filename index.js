@@ -105,15 +105,18 @@
 
 function checkDuplicates(nums) {
   const unique = new Set();
+  const duplicates = []
   for (let i = 0; i < nums.length; i++) {
     let num = nums[i];
     if (unique.has(num)) {
+        duplicates.push(num)
       return true;
     } else {
       unique.add(num);
       return false;
     }
   }
+  console.log(duplicates.length)
 }
-let number = checkDuplicates([1, 2, 3, 4, 5, 6, 1]);
+let number = checkDuplicates([1, 2, 3, 4, 5, 6,1]);
 console.log(number);
