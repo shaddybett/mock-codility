@@ -156,53 +156,26 @@
 // let numbers = arrangeNUmbers([4,3,2,1,5])
 // console.log(numbers)
 
-// function complementTarget(nums, target) {
-//     let summing = [];
-    
-//     for (let i = 0; i < nums.length; i++) {
-//         let num = nums[i];
-//         let oneNum = target - num;
-//         let oneNumIndex = nums.indexOf(oneNum);
-//         if (oneNumIndex !== -1 && summing.indexOf(i) === -1 && summing.indexOf(oneNumIndex) === -1 && i !== oneNumIndex) {
-//             summing.push(i, oneNumIndex);
-//         }
-//     }
-//     return summing;
-// }
-
-// let numbers = complementTarget([1, 2, 3, 4, 5], 6);
-// console.log(numbers); // Output: [0, 4, 1, 3]
 
 
-// function twoSum(nums, target) {
-//     const indices = {};
-
-//     for (let i = 0; i < nums.length; i++) {
-//         const complement = target - nums[i];
-//         if (indices.hasOwnProperty(complement)) {
-//             return [indices[complement], i];
-//         }
-//         indices[nums[i]] = i;
-//     }
-
-//     return [];
-// }
-
-// // Example usage:
-// const nums = [2, 7, 11, 15];
-// const target = 9;
-// console.log(twoSum(nums, target)); // Output: [0, 1]
 
 
-function twoSum(nums,target) {
-    const indices = {}
+// returning two sum targets
+function twoSum(nums, target) {
+    const indices = {};
 
-    for (let i = 0;i <nums.length;i++) {
-        let num = nums[i]
-        let complement = target - num;
-
-        if(indices.hasOwnProperty(complement)) {
-            return [indices[]]
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (indices.hasOwnProperty(complement)) {
+            return [indices[complement], i];
         }
+        indices[nums[i]] = i;
     }
+
+    return [];
 }
+
+// Example usage:
+const nums = [2, 7, 11, 15];
+const target = 9;
+console.log(twoSum(nums, target)); // Output: [0, 1]
