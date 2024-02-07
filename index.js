@@ -115,11 +115,11 @@ function checkDuplicates(nums) {
       unique.add(num);
     //   return false;
     }
-    if (unique.size !== duplicates.length) {
-        return true;
+    if (unique.size === duplicates.length) {
+        return false;
     }
     else {
-        return false;
+        return true;
     }
   }
 //   console.log(duplicates.length)
