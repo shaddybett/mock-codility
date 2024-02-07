@@ -145,3 +145,18 @@
 // let number = checkDuplicates([1,2,3,4,1])
 // console.log(number)
 
+
+
+
+
+
+function arrangeNUmbers(nums) {
+    for (let i = 0;i<nums.length;i++) {
+        let arranged = nums.sort((a,b)=> a-b)
+        return arranged;
+    }
+    
+}
+
+let numbers = arrangeNUmbers([4,3,2,1])
+console.log(numbers)
