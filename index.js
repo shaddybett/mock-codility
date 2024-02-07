@@ -109,6 +109,13 @@
 function checkDuplicates(nums) {
     let unique = new Set(nums)
     for (let i = 0;i < nums.length; i++) {
+        let num = nums[i];
+        if (unique.has(num)){
+            return true;
+        }
+        else {
+            unique.add(num)
+        }
         
     }
 }
