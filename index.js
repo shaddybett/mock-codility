@@ -150,13 +150,17 @@
 
 
 // arranging numbers in ascending order
-function arrangeNUmbers(nums) {
-    for (let i = 0;i<nums.length;i++) {
-        let arranged = nums.sort((a,b)=> a-b)
-        return arranged;
-    }
-    
-}
+// function arrangeNUmbers(nums) {
+//     return nums.sort((a,b)=> a-b)
+// }
+// let numbers = arrangeNUmbers([4,3,2,1,5])
+// console.log(numbers)
 
-let numbers = arrangeNUmbers([4,3,2,1,5])
-console.log(numbers)
+
+function complementTarget(nums,target) {
+    for (let i = 0;i<nums.length;i++) {
+        let num = nums[i];
+        let one = target - num;
+
+    }
+}
