@@ -107,5 +107,6 @@
 
 
 function checkDuplicates(nums) {
-    let unique = 
+    let unique = new Set(nums)
+    
 }
