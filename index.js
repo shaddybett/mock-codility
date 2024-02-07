@@ -149,7 +149,7 @@
 
 
 
-
+// arranging numbers in ascending order
 function arrangeNUmbers(nums) {
     for (let i = 0;i<nums.length;i++) {
         let arranged = nums.sort((a,b)=> a-b)
@@ -158,5 +158,5 @@ function arrangeNUmbers(nums) {
     
 }
 
-let numbers = arrangeNUmbers([4,3,2,1])
+let numbers = arrangeNUmbers([4,3,2,1,5])
 console.log(numbers)
