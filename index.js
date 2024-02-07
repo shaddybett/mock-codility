@@ -160,7 +160,10 @@
 function complementTarget(nums,target) {
     for (let i = 0;i<nums.length;i++) {
         let num = nums[i];
-        let one = target - num;
+        let oneNum = target - num;
+        if (oneNum + num === target) {
+            return num;
+        }
 
     }
 }
