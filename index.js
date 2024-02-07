@@ -102,3 +102,12 @@
 // }
 // let numbers = findIndex([1, 2, 3, 4, 5]);
 // console.log(numbers);
+
+
+
+
+function checkDuplicates(nums) {
+    for (let i = 0;i<nums.length;i++) {
+        
+    }
+}
