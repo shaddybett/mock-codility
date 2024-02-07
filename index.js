@@ -110,13 +110,19 @@ function checkDuplicates(nums) {
     let num = nums[i];
     if (unique.has(num)) {
         duplicates.push(num)
-      return true;
+    //   return true;
     } else {
       unique.add(num);
-      return false;
+    //   return false;
+    }
+    if (unique.size !== duplicates.length) {
+        return true;
+    }
+    else {
+        return false;
     }
   }
-  console.log(duplicates.length)
+//   console.log(duplicates.length)
 }
-let number = checkDuplicates([1, 2, 3, 4, 5, 6,1]);
+let number = checkDuplicates([1, 2, 3, 4, 5, 6]);
 console.log(number);
