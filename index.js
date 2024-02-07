@@ -128,7 +128,7 @@
 
 
 function checkDuplicates(nums) {
-    const unique = new Set(nums)
+    const unique = new Set()
     const duplicates = []
 
     for (let i = 0;i < nums.length;i++) {
@@ -136,6 +136,11 @@ function checkDuplicates(nums) {
         if(unique.has(num)) {
             duplicates.push (num)
         }
+        else {
+            unique.add(num);
+        }
     }
     return duplicates;
 }
+let number = checkDuplicates([1,2,3,4,1])
+console.log(number)
