@@ -75,17 +75,13 @@
 //     } else {
 //       numSet.add(num);
 //     }
-    
+
 //   }
 // //   return duplicates.length;
 // //   return { unique: Array.from(numSet), duplicates };
 // }
 // let numbers = sortedList([2, 4, 6, 8, 3, 6, 9, 4]);
 // console.log(numbers)
-
-
-
-
 
 // // function firstDup
 
@@ -96,13 +92,13 @@
 // let number = sortList([4,2,1,3])
 // console.log(number)
 
+// function findIndex(nums) {
+//   let indices = {};
 
-
-function findIndex(nums) {
-    let indices = {}
-
-    nums.forEach((num,index)=> {
-        indices[num] = index;
-    });
-    return indices;
-}
+//   nums.forEach((num, index) => {
+//     indices[num] = index;
+//   });
+//   return indices;
+// }
+// let numbers = findIndex([1, 2, 3, 4, 5]);
+// console.log(numbers);
