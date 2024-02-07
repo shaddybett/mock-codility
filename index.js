@@ -103,21 +103,17 @@
 // let numbers = findIndex([1, 2, 3, 4, 5]);
 // console.log(numbers);
 
-
-
-
 function checkDuplicates(nums) {
-    const unique = new Set(nums)
-    for (let i = 0;i<nums.length;i++) {
-        let num = nums[i]
-        if(unique.has(num)) {
-            return true;
-
-        }
-        else {
-            return false;
-        }
+  const unique = new Set();
+  for (let i = 0; i < nums.length; i++) {
+    let num = nums[i];
+    if (unique.has(num)) {
+      return true;
+    } else {
+      unique.add(num);
+      return false;
     }
+  }
 }
-let number = checkDuplicates([1,2,3,4,5,6])
-console.log(number)
+let number = checkDuplicates([1, 2, 3, 4, 5, 6, 1]);
+console.log(number);
