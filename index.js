@@ -125,3 +125,13 @@
 
 
 
+
+
+function checkDuplicates(nums) {
+    const unique = new Set(nums)
+    const duplicates = []
+
+    for (let i = 0;i < nums.length;i++) {
+        
+    }
+}
