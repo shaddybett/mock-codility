@@ -132,6 +132,10 @@ function checkDuplicates(nums) {
     const duplicates = []
 
     for (let i = 0;i < nums.length;i++) {
-        
+        let num = nums[i]
+        if(unique.has(num)) {
+            duplicates.push (num)
+        }
     }
+    return duplicates;
 }
