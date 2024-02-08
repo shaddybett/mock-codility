@@ -103,6 +103,16 @@
 // let numbers = findIndex([1, 2, 3, 4, 5]);
 // console.log(numbers);
 
+// function returnIndices(nums) {
+//     let indices = {}
+//     nums.forEach((num,index)=>{
+//         indices[num] = index;
+//     });
+//     return indices;
+// }
+// let numbers = findIndex([1, 2, 3, 4, 5]);
+// console.log(numbers);
+
 // if has duplicates return true else return false >>>>>>>>>>>
 // function checkDuplicates(nums) {
 //     let unique = new Set()
@@ -174,8 +184,6 @@
 // let n = createHelloWorld()
 // console.log(n());
 
-
-
 // finding even or odd numbers >>>>>>>
 // function findNumbers(nums) {
 //   let even = [];
@@ -193,10 +201,72 @@
 // let numbers = findNumbers([1, 2, 3, 4, 5, 6]);
 // console.log(numbers);
 
+// return incremented numbers >>>>>>>
+// function counting(num) {
+//     return ()=> {
+//         return num++
+//     }
+// }
+// const value = counting(5)
+// console.log(value());
+// console.log(value());
+// console.log(value())
 
 
 
 
-function counter(num) {
-    
+// function solution(A, B, C, D) {
+//     let digits = [A, B, C, D];
+//     let count = 0;
+
+//     for (let a = 0; a < digits.length; a++) {
+//         for (let b = 0; b < digits.length; b++) {
+//             for (let c = 0; c < digits.length; c++) {
+//                 for (let d = 0; d < digits.length; d++) {
+//                     if (a !== b && a !== c && a !== d && b !== c && b !== d && c !== d) {
+//                         let hours = digits[a] * 10 + digits[b];
+//                         let mins = digits[c] * 10 + digits[d];
+
+//                         if (hours < 24 && mins < 60) {
+//                             count++;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return count / 2; 
+// }
+
+// let nums = solution(1, 2, 3, 4);
+// console.log(nums); 
+
+
+
+
+function solution(A, B, C, D) {
+    let digits = [A, B, C, D];
+    let count = 0;
+    for (let a = 0; a < digits.length; a++) {
+        for (let b = 0; b < digits.length; b++) {
+            for (let c = 0; c < digits.length; c++) {
+                for (let d = 0; d < digits.length; d++) {
+                    if (a !== b && a !== c && a !== d && b !== c && b !== d && c !== d) {
+                        let hours = digits[a] * 10 + digits[b];
+                        let mins = digits[c] * 10 + digits[d];
+
+                        if (hours < 24 && mins < 60) {
+                            count++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return count;
 }
+
+let nums = solution(1, 2, 3, 4);
+console.log(nums); 
+
+
