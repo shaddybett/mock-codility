@@ -157,32 +157,32 @@
 // console.log(numbers)
 
 // returning two sum targets >>>>>>>
-// function twoSum(nums, target) {
-//     const indices = {};
+function twoSum(nums, target) {
+    const indices = {};
 
-//     for (let i = 0; i < nums.length; i++) {
-//         const complement = target - nums[i];
-//         if (indices.hasOwnProperty(complement)) {
-//             return [indices[complement], i];
-//         }
-//         indices[nums[i]] = i;
-//     }
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (indices.hasOwnProperty(complement)) {
+            return [indices[complement], i];
+        }
+        indices[nums[i]] = i;
+    }
 
-//     return [];
-// }
+    return [];
+}
 
-// // Example usage:
-// const nums = [2, 7, 11, 15];
-// const target = 9;
-// console.log(twoSum(nums, target)); // Output: [0, 1]
+// Example usage:
+const nums = [2, 7, 11, 15];
+const target = 9;
+console.log(twoSum(nums, target)); // Output: [0, 1]
 
 // return hello world >>
 
-// function createHelloWorld(args) {
-//     return ()=> "Hello World"
+// function greet(arg){
+//     return 'Hello world';
 // }
-// let n = createHelloWorld()
-// console.log(n());
+// let n = greet()
+// console.log(n)
 
 // finding even or odd numbers >>>>>>>
 // function findNumbers(nums) {
@@ -201,6 +201,9 @@
 // let numbers = findNumbers([1, 2, 3, 4, 5, 6]);
 // console.log(numbers);
 
+
+
+
 // return incremented numbers >>>>>>>
 // function counting(num) {
 //     return ()=> {
@@ -211,6 +214,20 @@
 // console.log(value());
 // console.log(value());
 // console.log(value())
+
+// function numbers(num) {
+//     num++;
+//     for (let i = 0;i<num.length;i++){
+//         let nums = i+num;
+//         return nums
+//     }
+//     return num;
+
+    
+    
+// }
+// let value = numbers(5)
+// console.log(value)
 
 
 
@@ -244,29 +261,29 @@
 
 
 
-function solution(A, B, C, D) {
-    let digits = [A, B, C, D];
-    let count = 0;
-    for (let a = 0; a < digits.length; a++) {
-        for (let b = 0; b < digits.length; b++) {
-            for (let c = 0; c < digits.length; c++) {
-                for (let d = 0; d < digits.length; d++) {
-                    if (a !== b && a !== c && a !== d && b !== c && b !== d && c !== d) {
-                        let hours = digits[a] * 10 + digits[b];
-                        let mins = digits[c] * 10 + digits[d];
+// function solution(A, B, C, D) {
+//     let digits = [A, B, C, D];
+//     let count = 0;
+//     for (let a = 0; a < digits.length; a++) {
+//         for (let b = 0; b < digits.length; b++) {
+//             for (let c = 0; c < digits.length; c++) {
+//                 for (let d = 0; d < digits.length; d++) {
+//                     if (a !== b && a !== c && a !== d && b !== c && b !== d && c !== d) {
+//                         let hours = digits[a] * 10 + digits[b];
+//                         let mins = digits[c] * 10 + digits[d];
 
-                        if (hours < 24 && mins < 60) {
-                            count++;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return count;
-}
+//                         if (hours < 24 && mins < 60) {
+//                             count++;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return count;
+// }
 
-let nums = solution(1, 2, 3, 4);
-console.log(nums); 
+// let nums = solution(1, 2, 3, 4);
+// console.log(nums); 
 
 
